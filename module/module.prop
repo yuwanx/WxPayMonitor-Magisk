@@ -1,0 +1,6 @@
+id=wxpay_monitor
+name=微信收款通知回调
+version=2.0.1-pure
+versionCode=201
+author=yuwanx / Seagull
+description=纯Magisk实现，零APK；配置：/data/adb/modules/wxpay_monitor/config/config.properties（默认10秒热生效）

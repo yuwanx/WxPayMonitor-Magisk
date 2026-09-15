@@ -1,0 +1,11 @@
+微信收款通知回调模块
+
+配置文件：
+/data/adb/modules/wxpay_monitor/config/config.properties
+
+修改配置后无需重启，最多等待 monitor_period_seconds 指定的秒数生效（默认 10 秒）。
+
+运行日志：
+/data/adb/modules/wxpay_monitor/logs/monitor.log
+
+实现方式：纯 Magisk shell + dumpsys notification + curl，不安装 APK。

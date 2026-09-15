@@ -1,0 +1,12 @@
+build/
+dist/
+app/
+signing/
+*.apk
+*.idsig
+*.jks
+*.keystore
+*.log
+*.tmp
+.idea/
+.vscode/
