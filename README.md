@@ -2,7 +2,6 @@
 
 纯 Magisk 微信收款通知回调模块。无需安装 APK、无需开启通知读取权限。
 
-模块参考 [Message_Forwarding](https://github.com/yuwanx/Message_Forwarding) 的实现，
 由 root shell 周期性执行 `dumpsys notification --noredact`，筛选微信收款助手通知，
 再使用 `curl` 上报到支付平台。
 
@@ -120,11 +119,7 @@ powershell -ExecutionPolicy Bypass -File .\build.ps1
 ## 隐私与安全
 
 - 只读取 Android 当前通知列表，不读取微信数据库。
-- 默认模板不包含任何平台地址、商户 ID、Token 或通讯密钥。
-- 不要把填写过真实密钥的 `config.properties` 提交到公开仓库。
 
-## 致谢与许可证
+## 许可证
 
-通知解析方式参考 [yuwanx/Message_Forwarding](https://github.com/yuwanx/Message_Forwarding)。
-本项目使用 MIT License；上游许可证副本见
-`module/THIRD_PARTY_LICENSE_Message_Forwarding.txt`。
+本项目使用 MIT License。
